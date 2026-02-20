@@ -23,7 +23,7 @@ document.getElementById('login-btn').addEventListener('click', function(){
         // 3-1. true :::>> alert> homepage
         alert('Login Success');
 
-        window.location.assign('/home.html');
+        window.location.assign('home.html');
 
     }
     else{
