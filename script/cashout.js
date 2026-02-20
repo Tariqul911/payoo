@@ -38,6 +38,24 @@ document.getElementById('cashout-btn').addEventListener('click',function(){
         alert('CashOut Successfull');
         // document.getElementById('balance').innerText = newBalance;
         setBalance(newBalance);
+
+        // 1. history-container ke dhore niye ashbo
+
+        const history = document.getElementById('history-container');
+
+        // 2. new div create korbo
+        const newHistory = document.createElement('div');
+
+        // 3. new div innerHTML add korbo
+        newHistory.innerHTML = `
+        <div class="transaction p-5 bg-base-100">
+        Cashout ${cashoutAmount} TK Success to ${cashoutNumber} , at ${new Date()}
+        </div>
+        `
+
+        // 4. history container e newDiv append korbo
+        history.append(newHistory);
+
     }else{
         alert('Invalid Pin');
         return;
