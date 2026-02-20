@@ -4,6 +4,8 @@
     // 3-1. true :::>> alert> homepage
     // 3-2. false :::>> alert> return
 
+// ******************************              ************************************
+
 
 document.getElementById('login-btn').addEventListener('click', function(){
     // 1.get the mobile number input
